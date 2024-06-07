@@ -1,0 +1,32 @@
+stationary
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,pri;
+    float amt;
+    scanf("%d%d",&n,&pri);
+    int tp=n*pri;
+    printf("Quantity Ordered %d",n);
+    printf("\nPrice per item is Rs.%d",pri);
+    if(n>200){
+        amt=tp;
+        printf("\nTotal Amount = Rs.%.0f",amt);
+        printf("\nDiscount Earned = Rs.%.1f",amt*0.2);
+        amt=tp-(tp*0.2);
+        printf("\nAmount after Discount - Rs.%.1f",amt);
+    }
+    else
+    {
+        amt=tp;
+        printf("\nTotal Amount = Rs.%.0f",amt);
+    }
+    float gst=(float)(amt*0.18);
+    float totamt=(float)amt+gst;
+    printf("\nGST - Rs.%.1f",gst);
+    printf("\nNet Amount Payable is Rs.%.1f",totamt);  
+    return 0;
+}
