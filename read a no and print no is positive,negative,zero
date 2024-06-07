@@ -1,0 +1,22 @@
+read a no and print no is +ve,-ve,zero
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a<0)
+    {
+        printf("negative no");
+    }
+    else
+    if(a>0)
+    {
+        printf("positive no");
+    }
+    else
+    {
+        printf("zero");
+    }
+    
+    return 0;
+}
