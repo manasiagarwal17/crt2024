@@ -1,0 +1,36 @@
+video share
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   
+
+    int b;
+    scanf("%d",&b);
+    if(30<b && b<50)
+    {
+        printf("Average");
+    }
+    else if(51<b && b<60)
+    {
+        printf("Good");
+    }
+    else if(61<b && b<80)
+    {
+        printf("Excellent");
+    }
+    else if(81<b && b<100)
+    {
+        printf("Outstanding");
+    }
+    else
+        printf("Invalid Input");
+
+
+    
+    
+    return 0;
+}
