@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,l,b;
+        double h;
+        a=s.nextInt();
+        l=s.nextInt();
+        b=s.nextInt(); 
+        h=s.nextDouble();
+        int t=a*a;
+        System.out.println(t);
+        int r=l*b;
+        System.out.println(r);
+        double c=3.14*h*h;
+        System.out.printf("%.2f",c);        
+        
+        
+        
+        
+    }
+}
